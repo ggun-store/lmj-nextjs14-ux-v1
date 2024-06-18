@@ -1,0 +1,30 @@
+th{
+    border : 1px solid gray;
+}
+.col1{
+    width : 150px;
+}
+.col2{
+    width : 300px;
+    background-color : #FFE3EE;
+}.col3{
+    width : 200px;
+    
+}.col4{
+    width : 150px;
+    background-color : #FFE3EE;
+}.col5{
+    width : 200px;
+}
+.col6{
+    width : 250px;
+    background-color : #00FFFF;
+}.col7{
+    width : 200px;
+    
+}.col8{
+    width : 200px;
+    background-color : #00FFFF;
+}.col9{
+    width : 150px;
+}
