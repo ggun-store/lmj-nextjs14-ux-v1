@@ -1,3 +1,4 @@
+import BottomBar from "@/components/common/module/ggun/main/bottomBar"
 import BottomCom from "@/components/common/module/ggun/main/bottomCom"
 import CenterCom from "@/components/common/module/ggun/main/centerCom"
 import Header from "@/components/common/module/ggun/main/header"
@@ -8,9 +9,6 @@ import TopCom from "@/components/common/module/ggun/main/topCom"
 export default function Main(){
     return(<>
         <div>
-        <head>
-            <title>메인페이지</title>
-        </head>  
         <Header></Header>
         </div>
         <div className=" flex mt-8">
@@ -35,6 +33,8 @@ export default function Main(){
         </div>
         </div>
         </div>
-        
+        <div className="mt-20">
+        <BottomBar></BottomBar>
+        </div>
     </>)
 }
