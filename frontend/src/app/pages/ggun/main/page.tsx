@@ -8,6 +8,9 @@ import TopCom from "@/components/common/module/ggun/main/topCom"
 export default function Main(){
     return(<>
         <div>
+        <head>
+            <title>메인페이지</title>
+        </head>  
         <Header></Header>
         </div>
         <div className=" flex mt-8">
