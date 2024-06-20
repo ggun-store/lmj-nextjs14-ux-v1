@@ -36,6 +36,9 @@ export default function LoginBar(){
             username: e.target.value
           })
     }
+    const handleMain =() =>{
+      router.push('/pages/ggun/main')
+    }
     const handleSubmit =()=>{
         dispatch(existsByUsername(user.username))
         .then((res:any)=>{
@@ -95,6 +98,9 @@ export default function LoginBar(){
             </pre>)}
         <input className="border-b-2 bg-inherit w-[16rem] h-[3rem]" type="password" name="id" id="id" placeholder="password" ></input>
         <button type="submit" onClick={handleSubmit} className="mt-24 border-white border-2 rounded-[20px] w-[7rem] h-[3rem] text-white font-semibold">Login</button>
+        </div>
+        <div>
+          <button onClick={handleMain}>main으로 이동</button>
         </div>
     </>)
 }
