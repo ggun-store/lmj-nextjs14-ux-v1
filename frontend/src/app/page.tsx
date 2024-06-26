@@ -37,7 +37,7 @@ export default function Main() {
                         <button className="mt-[5rem] border-[--color-pebble-2] text-[--color-pebble-2] hover:text-[#872642] border-2 rounded-[20px] w-[7rem] h-[3rem]  font-semibold" onClick={handlePage}>Sign in</button>
                     </div>
                 </div>
-                <div className={`flex items-center absolute top-[-5rem] left-[1rem] h-[40rem] w-[23rem] bg-[--color-pebble-1] rounded-[10px] flex-col z-0 ${isAnimating ? "animate-[TransRight_1.5s_ease-in-out_forwards]" : "animate-[Transleft_1.5s_ease-in-out_forwards]"}`} id="LoginBack">
+                <div className={`flex items-center absolute top-[-5rem] left-[1rem] h-[43rem] w-[23rem] bg-[--color-pebble-1] rounded-[10px] flex-col z-0 ${isAnimating ? "animate-[TransRight_1.5s_ease-in-out_forwards]" : "animate-[Transleft_1.5s_ease-in-out_forwards]"}`} id="LoginBack">
                     {isLogin ? <LoginBar /> : <JoinBar />}
                 </div>
             </div>

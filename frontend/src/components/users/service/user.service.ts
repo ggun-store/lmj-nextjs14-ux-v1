@@ -8,7 +8,7 @@ async (user:IUser) => await loginAPI(user)
 
 )
 export const existsByUsername: any = createAsyncThunk(
-    'auth/exists-Username',
+    'auth/check',
     async (username:string) => await existsByUsernameAPI(username)
     
     )

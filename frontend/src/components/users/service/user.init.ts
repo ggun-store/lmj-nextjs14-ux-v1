@@ -7,8 +7,7 @@ export const initialState:IUser = {
     email : '',
     name : '',
     phone : '',
-    job : '',
-    regDate : '',
-    modDate : '',
+    age : '',
+    sex : '',
     token : '',
 }

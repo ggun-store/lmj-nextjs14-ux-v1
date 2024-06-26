@@ -1,12 +1,22 @@
+import JoinInvest from "./joinInvest";
+
 export default function JoinBar(){
     return(<>
-        <h2 className="mt-24 text-white text-[3rem]">Join</h2>
-        <div className="mt-10 flex items-center flex-col gap-3">
+        <h2 className="mt-4 text-white text-[3rem]">Join</h2>
+        <div className="mt-4 flex items-center flex-col gap-3">
+        <form action="" className="flex items-center flex-col gap-3">
         <input className="border-b-2 bg-inherit w-[16rem] h-[3rem]" type="id" name="id" id="id" placeholder="username" ></input>
         <input className="border-b-2 bg-inherit w-[16rem] h-[3rem]" type="password" name="id" id="id" placeholder="password" ></input>
         <input className="border-b-2 bg-inherit w-[16rem] h-[3rem]" type="name" name="name" id="name" placeholder="name" ></input>
+        <div>
+        <input className="border-b-2 bg-inherit w-[8rem] h-[3rem]" type="personalNo6" name="personalNo6" id="personalNo6" placeholder="personalNo6" maxLength={6} ></input>
+        -
+        <input className="border-b-2 bg-inherit w-[8rem] h-[3rem]" type="personalNo1" name="personalNo1" id="personalNo1" placeholder="personalNo1" maxLength={1} ></input>
+        </div>
         <input className="border-b-2 bg-inherit w-[16rem] h-[3rem]" type="phone" name="phone" id="phone" placeholder="010-****-****" ></input>
-        <button type="submit" className="mt-14 border-white border-2 rounded-[20px] w-[7rem] h-[3rem] text-white font-semibold">Join</button>
+        <JoinInvest/>
+        </form>
+        <button type="submit" className="mt-4 border-white border-2 rounded-[20px] w-[7rem] h-[3rem] text-white font-semibold">Join</button>
         </div>
     </>)
 }

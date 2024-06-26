@@ -13,8 +13,7 @@ export default function RightBottomBarF() {
             </a>
             <a href="#" className="w-[15rem] h-[12rem] bg-[--color-pebble-hover] flex justify-center items-center font-bold text-[1.5rem] text-white"> 종목검색
             </a>
-            <a href="#" className="w-[20rem] h-[12rem] bg-[--color-pebble-hover] flex justify-center items-center font-bold text-[1.5rem] text-white"> 자주찾는메뉴
-            </a>
+            
             
             
         </>

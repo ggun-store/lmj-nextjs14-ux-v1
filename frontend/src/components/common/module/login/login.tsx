@@ -18,7 +18,7 @@ export default function LoginBar() {
   const existUser = useSelector(getExistsByUsername)
   const formRef = useRef<HTMLInputElement>(null);
 
-  const handleUsername = (e: any) => {
+  const handleUsername = (e:React.ChangeEvent<HTMLInputElement>) => {
     const ID_CHECK = /^[a-zA-Z][a-zA-Z0-9]{2,15}$/g
     // 영어 대소문자로 시작하는 6~20자의 영어 소문자와 뜨는 숫자 
     setLen(e.target.value)

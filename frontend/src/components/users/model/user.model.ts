@@ -5,8 +5,7 @@ export interface IUser{
     email? : string,
     name? : string,
     phone? : string,
-    job? : string,
-    regDate? : string,
-    modDate? : string,
+    age? : string,
+    sex? : string,
     token? : string,
 }
