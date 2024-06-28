@@ -18,6 +18,9 @@ const config: Config = {
       fontFamily: {
         font1: ["font1"],
         font2: ["font2"],
+        ggunFont1: ["ggunFont1"],
+        ggunFont2: ["ggunFont2"],
+        ggunFont3: ["ggunFont3"],
       },
       margin: {
         "440px": "440px",
@@ -74,6 +77,41 @@ const config: Config = {
         TransRight: {
           "0%": { transform: "translateX(0rem)" },
           "100%": { transform: "translateX(23rem)" },
+        },
+        aniUp: {
+          "0%": { transform: "scale(100%,100%)"},
+          "50%": { transform: "scale(100%,200%)" },
+          "100%": { transform: "scale(100%,150%)" },
+        },
+        aniUp2: {
+          "0%": { transform: "scale(100%,100%)"},
+          "50%": { transform: "scale(100%,200%)" },
+          "100%": { transform: "scale(100%,250%)" },
+        },
+        aniUp3: {
+          "0%": { transform: "scale(100%,100%)"},
+          "50%": { transform: "scale(100%,250%)" },
+          "100%": { transform: "scale(100%,120%)" },
+        },
+        aniDown: {
+          "0%": { transform: "scale(100%,100%)"},
+          "50%": { transform: "scale(100%,50%)" },
+          "100%": { transform: "scale(100%,70%)" },
+        },
+        aniDown2: {
+          "0%": { transform: "scale(100%,100%)"},
+          "50%": { transform: "scale(100%,30%)" },
+          "100%": { transform: "scale(100%,60%)" },
+        },
+        aniDown3: {
+          "0%": { transform: "scale(100%,100%)"},
+          "50%": { transform: "scale(100%,80%)" },
+          "100%": { transform: "scale(100%,40%)" },
+        },
+        aniDown4: {
+          "0%": { transform: "scale(100%,120%)"},
+          "50%": { transform: "scale(100%,40%)" },
+          "100%": { transform: "scale(100%,100%)" },
         },
       },
     },

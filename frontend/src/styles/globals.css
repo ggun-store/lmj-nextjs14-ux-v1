@@ -16,6 +16,18 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "ggunFont1";
+  src: url("/fonts/꾼폰트.ttf");
+}
+@font-face {
+  font-family: "ggunFont2";
+  src: url("/fonts/꾼폰트2.ttf");
+}
+@font-face {
+  font-family: "ggunFont3";
+  src: url("/fonts/꾼폰트3.ttf");
+}
 
 :root {
     --color-pebble-1 : #433E49;

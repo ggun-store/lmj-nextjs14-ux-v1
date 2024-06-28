@@ -78,8 +78,8 @@ export default function LoginBar() {
   }
 
   return (<>
-    <h2 className="mt-24 text-white text-[3rem]">Login</h2>
-    <div className="mt-20 flex items-center flex-col gap-3">
+    <h2 className="mt-28 text-white text-[3rem]">Login</h2>
+    <div className="mt-28 flex items-center flex-col gap-3">
       <input className="border-b-2 bg-inherit w-[16rem] h-[3rem]" onChange={handleUsername} type="id" name="id" id="id" placeholder="username" ></input>
       {isWrongId && len?.length > 1 && (<pre>
         <h6 className='text-red-500'>
@@ -97,7 +97,18 @@ export default function LoginBar() {
         </h6>
       </pre>)}
       <input className="border-b-2 bg-inherit w-[16rem] h-[3rem]" type="password" name="id" id="id" placeholder="password" ></input>
-      <button type="submit" onClick={handleSubmit} className="mt-24 border-white border-2 rounded-[20px] w-[7rem] h-[3rem] text-white font-semibold">Login</button>
+      <div className="mt-12 w-[16rem] h-[4rem] flex justify-center items-center gap-7">
+        <button className="w-[2rem] h-[2rem]">
+        <img className="w-[2rem] h-[2rem]" src="./images/카카오이미지.png" alt="카카오 로고" />
+        </button>
+        <button className="w-[2rem] h-[2rem]">
+        <img className="w-[2rem] h-[2rem]" src="./images/구글이미지.png" alt="구글 로고" />
+        </button>
+        <button className="w-[2rem] h-[2rem]">
+        <img className="w-[2rem] h-[2rem]" src="./images/네이버이미지.png" alt="네이버 로고" />
+        </button>
+      </div>  
+      <button type="submit" onClick={handleSubmit} className="mt-12 border-white border-2 rounded-[20px] w-[7rem] h-[3rem] text-white font-semibold">Login</button>
     </div>
     <div>
       <button onClick={handleMain}>main으로 이동</button>

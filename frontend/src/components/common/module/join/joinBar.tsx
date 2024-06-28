@@ -5,9 +5,14 @@ export default function JoinBar(){
         <h2 className="mt-4 text-white text-[3rem]">Join</h2>
         <div className="mt-4 flex items-center flex-col gap-3">
         <form action="" className="flex items-center flex-col gap-3">
-        <input className="border-b-2 bg-inherit w-[16rem] h-[3rem]" type="id" name="id" id="id" placeholder="username" ></input>
+        <div>
+        <input className="border-b-2 bg-inherit w-[16rem] h-[3rem] relative" type="id" name="id" id="id" placeholder="username" ></input>
+        <button className="absolute right-[4.5rem] top-[7.3rem] bg-white">중복체크</button>
+        </div>
         <input className="border-b-2 bg-inherit w-[16rem] h-[3rem]" type="password" name="id" id="id" placeholder="password" ></input>
         <input className="border-b-2 bg-inherit w-[16rem] h-[3rem]" type="name" name="name" id="name" placeholder="name" ></input>
+        <input className="border-b-2 bg-inherit w-[16rem] h-[3rem]" type="name" name="name" id="name" placeholder="address" ></input>
+        <input className="border-b-2 bg-inherit w-[16rem] h-[3rem]" type="name" name="name" id="name" placeholder="010-****-**** (-제외하고 입력)" ></input>
         <div>
         <input className="border-b-2 bg-inherit w-[8rem] h-[3rem]" type="personalNo6" name="personalNo6" id="personalNo6" placeholder="personalNo6" maxLength={6} ></input>
         -
