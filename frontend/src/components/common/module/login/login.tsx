@@ -6,6 +6,23 @@ import { useRouter } from "next/navigation";
 import { setCookie } from "nookies";
 import { useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { LoginLogo } from "./data/login";
+import { loginLogo } from "./types/login";
+
+
+
+
+
+function OauthLogin(props: loginLogo) {
+  return (
+    <>
+      <button className="w-[2rem] h-[2rem]">
+        <img className="w-[2rem] h-[2rem]" src={props.src} alt={props.title} />
+      </button>
+    </>
+  )
+}
+
 
 export default function LoginBar() {
   const [user, setUser] = useState({} as IUser)
@@ -18,7 +35,7 @@ export default function LoginBar() {
   const existUser = useSelector(getExistsByUsername)
   const formRef = useRef<HTMLInputElement>(null);
 
-  const handleUsername = (e:React.ChangeEvent<HTMLInputElement>) => {
+  const handleUsername = (e: React.ChangeEvent<HTMLInputElement>) => {
     const ID_CHECK = /^[a-zA-Z][a-zA-Z0-9]{2,15}$/g
     // 영어 대소문자로 시작하는 6~20자의 영어 소문자와 뜨는 숫자 
     setLen(e.target.value)
@@ -98,16 +115,10 @@ export default function LoginBar() {
       </pre>)}
       <input className="border-b-2 bg-inherit w-[16rem] h-[3rem]" type="password" name="id" id="id" placeholder="password" ></input>
       <div className="mt-12 w-[16rem] h-[4rem] flex justify-center items-center gap-7">
-        <button className="w-[2rem] h-[2rem]">
-        <img className="w-[2rem] h-[2rem]" src="./images/카카오이미지.png" alt="카카오 로고" />
-        </button>
-        <button className="w-[2rem] h-[2rem]">
-        <img className="w-[2rem] h-[2rem]" src="./images/구글이미지.png" alt="구글 로고" />
-        </button>
-        <button className="w-[2rem] h-[2rem]">
-        <img className="w-[2rem] h-[2rem]" src="./images/네이버이미지.png" alt="네이버 로고" />
-        </button>
-      </div>  
+        <OauthLogin {...LoginLogo[0]}></OauthLogin>
+        <OauthLogin {...LoginLogo[1]}></OauthLogin>
+        <OauthLogin {...LoginLogo[2]}></OauthLogin>
+      </div>
       <button type="submit" onClick={handleSubmit} className="mt-12 border-white border-2 rounded-[20px] w-[7rem] h-[3rem] text-white font-semibold">Login</button>
     </div>
     <div>
