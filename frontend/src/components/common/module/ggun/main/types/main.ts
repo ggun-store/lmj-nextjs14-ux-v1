@@ -7,3 +7,7 @@ export type leftBot = {
 export type rightBot = {
     title : string;
 }
+export type botcom = {
+    title : string;
+    src : string;
+}

@@ -19,9 +19,7 @@ function CenCOM(props:CenterTitle) {
 export default function CenterCom() {
     return (
         <>
-       <CenCOM title={centerTitle[0].title}></CenCOM>
-       <CenCOM title={centerTitle[1].title}></CenCOM>
-       <CenCOM title={centerTitle[2].title}></CenCOM>
+        {centerTitle.map((centercom)=><CenCOM key={centercom.title} title={centercom.title}></CenCOM>)}
         </>
     )
 }

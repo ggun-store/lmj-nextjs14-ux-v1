@@ -16,12 +16,8 @@ function LeftbottomCom(props: leftBot) {
 export default function LeftBottomBarT() {
     return (
         <>
-            <LeftbottomCom title={leftBotTitle[0].title}></LeftbottomCom>
-            <LeftbottomCom title={leftBotTitle[1].title}></LeftbottomCom>
-            <LeftbottomCom title={leftBotTitle[2].title}></LeftbottomCom>
-            <LeftbottomCom title={leftBotTitle[3].title}></LeftbottomCom>
-            <LeftbottomCom title={leftBotTitle[4].title}></LeftbottomCom>
-            <LeftbottomCom title={leftBotTitle[5].title}></LeftbottomCom>
+            {leftBotTitle.map((leftBottomCom)=> <LeftbottomCom key={leftBottomCom.title} title={leftBottomCom.title}></LeftbottomCom>)}
+            
         </>
     )
 }

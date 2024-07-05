@@ -17,12 +17,7 @@ function RightbottomCom(props: rightBot) {
 export default function RightBottomBarF() {
     return (
         <>
-            <RightbottomCom title={rightBotTitle[0].title}></RightbottomCom>
-            <RightbottomCom title={rightBotTitle[1].title}></RightbottomCom>
-            <RightbottomCom title={rightBotTitle[2].title}></RightbottomCom>
-            <RightbottomCom title={rightBotTitle[3].title}></RightbottomCom>
-            <RightbottomCom title={rightBotTitle[4].title}></RightbottomCom>
-            <RightbottomCom title={rightBotTitle[5].title}></RightbottomCom>
+                {rightBotTitle.map((rightBottomCom) => <RightbottomCom key={rightBottomCom.title} title={rightBottomCom.title}></RightbottomCom>)}
         </>
     )
 }

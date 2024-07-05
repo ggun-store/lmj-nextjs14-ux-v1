@@ -115,9 +115,7 @@ export default function LoginBar() {
       </pre>)}
       <input className="border-b-2 bg-inherit w-[16rem] h-[3rem]" type="password" name="id" id="id" placeholder="password" ></input>
       <div className="mt-12 w-[16rem] h-[4rem] flex justify-center items-center gap-7">
-        <OauthLogin {...LoginLogo[0]}></OauthLogin>
-        <OauthLogin {...LoginLogo[1]}></OauthLogin>
-        <OauthLogin {...LoginLogo[2]}></OauthLogin>
+        {LoginLogo.map((loginLogo)=> <OauthLogin key={loginLogo.title} {...loginLogo}></OauthLogin>)}
       </div>
       <button type="submit" onClick={handleSubmit} className="mt-12 border-white border-2 rounded-[20px] w-[7rem] h-[3rem] text-white font-semibold">Login</button>
     </div>

@@ -49,3 +49,13 @@ export const rightBotTitle = [
         title: "종목검색"
     },
 ]
+export const bottomComData = [
+    {
+        title: "코스닥",
+        src: "https://png.pngtree.com/element_our/20190602/ourmid/pngtree-ppt-data-line-chart-illustration-image_1410712.jpg"
+    },
+    {
+        title: "코스피",
+        src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVzlotwkESUKuccngBYsfrGflOLAQUDOItNw&s"
+    }
+]
