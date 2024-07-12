@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react';
-import Account from "@/components/common/pages/account";
-import History from "@/components/common/pages/history";
+import Account from "@/components/common/module/ggun/account/accountInfo/account";
+import History from "@/components/common/module/ggun/account/accountInfo/history";
 import "@/app/pages/ggun/account/accountstyle.css";
 import Header from '@/components/common/module/ggun/main/header';
 
