@@ -1,7 +1,19 @@
+'use client'
+
+import { useState } from "react";
 import { HotImage } from "../data/hotNewsData";
 import HotnewsCom from "./hotnewsCom";
+import HotnewsCom2 from "./hotnewsCom2";
+
+
 
 export default function Hotnews(){
+    const [affterPage, setAffterPage] = useState(true)
+
+function handleChange(){
+    setAffterPage(false)
+}
+
     return(<>
     <div className="mt-20">
     <h2>지금 사람들이 많이 보는 뉴스</h2>
@@ -17,6 +29,47 @@ export default function Hotnews(){
     <HotnewsCom url={HotImage[5].url} text={HotImage[5].text} src={HotImage[5].background}></HotnewsCom>
     <HotnewsCom url={HotImage[6].url} text={HotImage[6].text} src={HotImage[6].background}></HotnewsCom>
     <HotnewsCom url={HotImage[7].url} text={HotImage[7].text} src={HotImage[7].background}></HotnewsCom>
+    </div>
+    <div className="flex flex-col">
+    <div className="flex flex-row gap-[3rem]">
+    <HotnewsCom2 url={HotImage[7].url} text={HotImage[7].text} src={HotImage[7].background}></HotnewsCom2>
+    <HotnewsCom2 url={HotImage[7].url} text={HotImage[7].text} src={HotImage[7].background}></HotnewsCom2>
+    </div>
+    <div className="flex flex-row gap-[3rem]">
+    <HotnewsCom2 url={HotImage[7].url} text={HotImage[7].text} src={HotImage[7].background}></HotnewsCom2>
+    <HotnewsCom2 url={HotImage[7].url} text={HotImage[7].text} src={HotImage[7].background}></HotnewsCom2>
+    </div>
+    <div className="flex flex-row gap-[3rem]">
+    <HotnewsCom2 url={HotImage[7].url} text={HotImage[7].text} src={HotImage[7].background}></HotnewsCom2>
+    <HotnewsCom2 url={HotImage[7].url} text={HotImage[7].text} src={HotImage[7].background}></HotnewsCom2>
+    </div>
+    <div className="flex flex-row gap-[3rem]">
+    <HotnewsCom2 url={HotImage[7].url} text={HotImage[7].text} src={HotImage[7].background}></HotnewsCom2>
+    <HotnewsCom2 url={HotImage[7].url} text={HotImage[7].text} src={HotImage[7].background}></HotnewsCom2>
+    </div>
+    <div className="flex flex-row gap-[3rem]">
+    <HotnewsCom2 url={HotImage[7].url} text={HotImage[7].text} src={HotImage[7].background}></HotnewsCom2>
+    <HotnewsCom2 url={HotImage[7].url} text={HotImage[7].text} src={HotImage[7].background}></HotnewsCom2>
+    </div>
+    <hr className="border-3 border-purple-400" />
+    {affterPage===true ? <button onClick={handleChange} className="flex justify-center">더보기</button> : <div className="flex flex-col">
+    <div className="flex flex-row gap-[3rem]">
+    <HotnewsCom2 url={HotImage[7].url} text={HotImage[7].text} src={HotImage[7].background}></HotnewsCom2>
+    <HotnewsCom2 url={HotImage[7].url} text={HotImage[7].text} src={HotImage[7].background}></HotnewsCom2>
+    </div>
+    <div className="flex flex-row gap-[3rem]">
+    <HotnewsCom2 url={HotImage[7].url} text={HotImage[7].text} src={HotImage[7].background}></HotnewsCom2>
+    <HotnewsCom2 url={HotImage[7].url} text={HotImage[7].text} src={HotImage[7].background}></HotnewsCom2>
+    </div>
+    <div className="flex flex-row gap-[3rem]">
+    <HotnewsCom2 url={HotImage[7].url} text={HotImage[7].text} src={HotImage[7].background}></HotnewsCom2>
+    <HotnewsCom2 url={HotImage[7].url} text={HotImage[7].text} src={HotImage[7].background}></HotnewsCom2>
+    </div>
+    <div className="flex flex-row gap-[3rem]">
+    <HotnewsCom2 url={HotImage[7].url} text={HotImage[7].text} src={HotImage[7].background}></HotnewsCom2>
+    <HotnewsCom2 url={HotImage[7].url} text={HotImage[7].text} src={HotImage[7].background}></HotnewsCom2>
+    </div>
+    </div>}
     </div>
     </>)
 }
