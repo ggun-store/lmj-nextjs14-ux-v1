@@ -3,7 +3,7 @@
 import { useState } from "react"
 
 export default function LeftCom() {
-    const img1 = "/images/1번패널.png"
+    const img1 = "//1번패널.png"
     const img2 = "/images/1번패널.png"
     const img3 = "https://static.cdn.soomgo.com/upload/banner/a4a7576a-4865-41af-9b52-1e60cb7c726b.png?w=970&webp=1"
     const img4 = "https://static.cdn.soomgo.com/upload/banner/a598d5c9-6e6a-4a2e-b4dc-d781eef10160.png?w=970&webp=1"
